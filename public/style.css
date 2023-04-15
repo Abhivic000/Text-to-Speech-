@@ -1,0 +1,96 @@
+body {
+    background-color: #333;
+    color: #fff;
+    transition: all 0.5s ease;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+   
+  }
+  .light-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  textarea {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #fff;
+  }
+  button {
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 2px #fff;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px #00ff00;
+  }
+  #options {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 20px;
+align-items: center;
+  }
+  select {
+    margin-right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 2px #fff;
+    transition: all 0.3s ease;
+  }
+  select:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px #00ff00;
+  }
+  #slider {
+    width: 300px;
+  }
+  #mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 2px #fff;
+    transition: all 0.3s ease;
+  }
+  #mode-toggle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 5px #00ff00;
+  }
+
+  @media only screen and (max-width: 600px) {
+  textarea {
+    width: 300px;
+  }
+  #options {
+    flex-direction: column;
+  }
+  select, button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #slider {
+    width: 100%;
+  }
+}
